@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Manutenção do Órgão Colegiado</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    label {
+      display: inline-block;
+      width: 120px;
+      margin-top: 8px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 400px;
+      padding: 4px;
+      margin-top: 5px;
+    }
+
+    .top-fields input {
+      width: 500px;
+      margin-bottom: 10px;
+    }
+
+    .box {
+      border: 1px solid black;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    .row {
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      width: 98%;
+      height: 60px;
+      resize: none;
+    }
+
+    .buttons {
+      margin-top: 10px;
+    }
+
+    .buttons input {
+      width: 80px;
+      padding: 4px;
+      margin-right: 10px;
+    }
+
+    .buscar-btn {
+      width: 60px;
+    }
+
+    .return-btn {
+      margin-top: 20px;
+    }
+
+    .inline {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .status-select {
+      width: 100px;
+      margin-left: 5px;
+    }
+
+    .small-input {
+      width: 120px;
+    }
+  </style>
+</head>
+<body>
+
+  <div><strong>Colegiado UNESP ...</strong></div>
+  <div>Manutenção do Órgão Colegiado</div>
+
+  <div class="top-fields">
+    <div><label>Unidade</label><input type="text" value="FACULDADE DE ENGENHARIA DE ILHA SOLTEIRA"></div>
+    <div><label>Tipo Colegiado</label><input type="text" value="CONGREGAÇÃO"></div>
+  </div>
+
+  <div class="box">
+    <strong>Órgão Colegiado</strong>
+    <div class="row">
+      <label>Nome</label>
+      <input type="text" value="CONGREGAÇÃO DA FACULDADE DE ILHA SOLTEIRA">
+    </div>
+    <div class="row">
+      <label>Sigla</label>
+      <input class="small-input" type="text" value="CFIS">
+      <label>Status</label>
+      <select class="status-select">
+        <option>ATIVADO</option>
+        <option>DESATIVADO</option>
+      </select>
+    </div>
+    <div class="row">
+      <label>Data Ativação</label>
+      <input class="small-input" type="text" value="15/10/2000">
+      <label style="margin-left: 40px;">Data Desativação</label>
+      <input class="small-input" type="text">
+    </div>
+    <div class="row">
+      <label>Órgão de Origem</label>
+      <input type="text">
+      <input class="buscar-btn" type="button" value="Buscar">
+    </div>
+    <div class="row">
+      <label>Órgão Superior</label>
+      <input type="text">
+      <input class="buscar-btn" type="button" value="Buscar">
+    </div>
+    <div class="row">
+      <label>Documentação</label><br>
+      <textarea>Órgão criado com o objetivo de aprovar normas da unidade.</textarea>
+    </div>
+    <div class="buttons">
+      <input type="button" value="Salvar">
+      <input type="button" value="Excluir">
+    </div>
+  </div>
+
+  <div class="return-btn">
+    <input type="button" value="Retornar">
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Notas dos alunos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      color: blue;
+      font-size: 16px;
+    }
+    hr {
+      border: 1px solid black;
+    }
+    table {
+      border-collapse: collapse;
+      margin: auto;
+    }
+    th, td {
+      border: 3px double #000;
+      padding: 6px 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #f8f8f8;
+      font-weight: bold;
+    }
+    .linha-cinza {
+      background-color: #d3d3d3;
+    }
+    .linha-branca {
+      background-color: #ffffff;
+    }
+    .verde {
+      color: green;
+      font-weight: bold;
+    }
+    .vermelho {
+      color: red;
+      font-weight: bold;
+    }
+    /* Largura personalizada para cada coluna */
+    .col-aluno {
+      width: 200px;
+    }
+    .col-nota {
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Notas dos alunos</h1>
+  <hr>
+
+  <table>
+    <tr>
+      <th rowspan="1" class="linha-branca col-aluno">Alunos</th>
+      <th colspan="2" class="linha-branca">Notas</th>
+    </tr>
+    <tr>
+      <th class="linha-branca col-aluno"><i>- </i></th> 
+      <th class="linha-branca col-nota"><i>Prova</i></th>
+      <th class="linha-branca col-nota"><i>Trabalho</i></th>
+    </tr>
+    <tr class="linha-cinza">
+      <td class="col-aluno">Ana Paula</td>
+      <td class="verde col-nota">10</td>
+      <td class="verde col-nota">8</td>
+    </tr>
+    <tr>
+      <td class="col-aluno">Beatriz</td>
+      <td class="verde col-nota">7</td>
+      <td class="vermelho col-nota">5</td>
+    </tr>
+    <tr class="linha-cinza">
+      <td class="col-aluno">Joaquim</td>
+      <td class="verde col-nota">9</td>
+      <td class="verde col-nota">10</td>
+    </tr>
+    <tr>
+      <td class="col-aluno">Paulo</td>
+      <td class="vermelho col-nota">4,5</td>
+      <td class="verde col-nota">6</td>
+    </tr>
+    <tr class="linha-cinza">
+      <td class="col-aluno">Tadeu</td>
+      <td class="vermelho col-nota">3</td>
+      <td class="vermelho col-nota">2</td>
+    </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,26 @@
+/* a) Links sem sublinhado e cor azul */
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+/* b) Estilo para h3 */
+h3 {
+  color: blue;
+  font-family: Arial, sans-serif;
+  font-size: 12pt;
+}
+
+/* c) Estilo para h1 */
+h1 {
+  color: blue;
+  font-family: Arial, sans-serif;
+  font-size: 16pt;
+}
+
+/* d) Classe nomeCampo */
+.nomeCampo {
+  color: black;
+  font-family: Arial, sans-serif;
+  font-size: 12pt;
+}
